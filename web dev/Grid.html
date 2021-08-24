@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      main {
+        border: 10px solid rgb(15, 184, 141);
+        color: rgb(226, 52, 29);
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 200px 450px 200px;
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
+      }
+      .div1 {
+        background-color: rgb(14, 8, 97);
+        color:rgb(238, 234, 10);
+        font-size: 50px;
+        text-align: center;
+        vertical-align: center;
+        grid-column: 1/7;
+      }
+      .div2 {
+        background-color: rgb(33, 221, 49);
+        grid-column: 1/2;
+        font-size: 50px;
+        text-align: center;
+        grid-row: 2/4;
+      }
+      .div3 {
+        background-color: rgb(13, 91, 180);
+        grid-column: 2/5;
+        font-size: 50px;
+        text-align: center;
+      }
+      .div4 {
+        background-color: rgb(199, 25, 184);
+        grid-column: 5/7;
+        font-size: 50px;
+        text-align: center;
+      }
+      .div5{
+          background-color: rgb(137, 233, 12);
+          grid-column: 2/7;
+          font-size: 50px;
+          text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="div1">HEADER</div>
+      <div class="div2">MENU</div>
+      <div class="div3">MAIN</div>
+      <div class="div4">RIGHT</div>
+      <div class="div5">FOOTER</div>
+    </main>
+  </body>
+</html>

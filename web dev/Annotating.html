@@ -1,0 +1,73 @@
+<html>
+<head>
+    <title>dynamic html</title>
+
+
+    <style>
+
+        #container{
+            background-color:rgb(148, 146, 10);
+            height:40px; width:400px;
+            color:white;
+        }
+     #div1{
+            background-color:rgb(55, 18, 221);
+            height:200px; width:200px;
+            color:white;
+        }
+
+    </style>
+
+    <script>
+
+        function showHide()
+        {
+            var elm = document.getElementById('div1');
+            var displaysetting=elm.style.display;
+            var btn=document.getElementById('divbutton');
+            if(displaysetting =='block')
+           {
+              //hide the division
+             elm.style.display='none';
+              //change button text
+              btn.innerHTML='Show Division';
+            }
+            else
+            {
+              //show the division
+              elm.style.display='block';
+              //change button text
+               btn.innerHTML='Hide Division';
+            }
+        }
+        function domCreation() {
+            var elm = document.createElement('div');
+            elm.setAttribute("style", "background-color:steelblue;");
+            elm.setAttribute("class", "item");
+            elm.innerText = "I am a new DIV Element";
+            document.body.appendChild(elm);
+        }
+</script>
+
+ </head>
+<body id="body">
+
+
+    <div id="container" >
+        <span>
+            National
+        </span>
+
+        <span>
+            Institute
+        </span>
+
+        <span onclick="domCreation()">
+            Of Technology
+        </span>
+
+    </div>
+<div id="div1">Honesty<br>Leading you out of darkness</div>
+<button onclick="showHide()" id="divbutton">Show/Hide Division</button>
+</body>
+</html>

@@ -1,0 +1,7 @@
+.class :nth-child(2n){
+    color: black;
+}
+.class :nth-child(n)
+{
+    color: white;
+}

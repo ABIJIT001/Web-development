@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition: background 5s;
+        }
+        div:hover {
+            background: blue; /* hover on div , it will change the background color, with transition*/
+        }
+       #box{
+            width: 50px;
+            height: 100px;
+            background: rgb(142, 24, 221); 
+            animation: mymove 3s infinite; /* animation mymove is defined for the duration of 3s for time period with infinite to run evertime*/
+        }
+        @keyframes mymove {
+           from {background: rgb(5, 5, 5);}
+           to {background: rgb(177, 177, 177);}
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Transition and animation Property</h1>
+     <p>Hover above the box given below to see transition property</p>
+     <div></div> <!--it is the box of showing the transition property-->
+    <p>It is having animation of background color change</p>
+    <div id="box"></div>  <!--it is the box having animation effect-->
+
+</body>
+</html>
+ <h2>Program used to display the 2d and 3rd tranform</h2> 
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .definewidth{  /* defined the particular value of height and width*/
+            height: 100px;
+            width: 100px;
+            background-color: #484adf;
+        }
+        #trans2d{
+            transform: skew(30deg,20deg); 
+        }
+        #trans3d{
+           background-color: rgb(53, 255, 27);
+           animation: mymove 4s infinite; 
+       }
+       @keyframes mymove {      
+           from{transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);}
+           to {transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);}
+       }
+    </style>
+</head>
+<body>
+    <h3>both the box are having the 2d transform</h3>
+    <div id="trans2d" class="definewidth"></div>
+    <h3>both the box are having the 3d transform</h3>
+    <div id="trans3d" class="definewidth"></div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Map</title>
+    <style>
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+  </head>
+  <body style="background-color: black">
+    <img
+      src="game.jpg"
+      alt="TOP 10 GAMES"
+      width="800"
+      height="300"
+      class="center"
+      usemap="#game"
+    />
+    <map name="game"
+      ><area
+        href="https://en.wikipedia.org/wiki/PlayStation_All-Stars_Battle_Royale"
+        alt="PlayStation_All-Stars_Battle_Royale"
+        target="_blank"
+        shape="rect"
+        coords="0,0,200,300"
+      />
+      <area
+        href="https://en.wikipedia.org/wiki/Fallout_3"
+        alt="Fallout_3"
+        target="_blank"
+        shape="rect"
+        coords="200,0,400,300"
+      />
+      <area
+        href="https://worldofwarcraft.com/en-gb/"
+        alt="worldofwarcraft"
+        target="_blank"
+        shape="rect"
+        coords="400,0,600,300"
+      />
+      <area
+        href="https://www.ea.com/en-gb/games/battlefield/battlefield-3"
+        alt="battlefield-3"
+        target="_blank"
+        shape="rect"
+        coords="600,0,800,300"
+      />
+
+    </map>
+  </body>
+</html>

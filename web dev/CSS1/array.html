@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array</title>
+    <script>
+      document.write("Following is an array of animes");
+      document.write("<br>");
+      document.write("<br>");
+      const anime = ["death note", "tokyo ghoul", "naruto"];
+      document.write(anime);
+      document.write("<br>");
+      document.write("<br>");
+      document.write("Is anime an array? ");
+      document.write("<br>");
+      document.write("<br>");
+      document.write(Array.isArray(anime));
+      document.write("<br>");
+      document.write("<br>");
+      anime[3] = "demon slayer";
+      anime.push("aot");
+      anime.unshift("bleach");
+      document.write("Adding 3 anime to array.");
+      document.write("<br>");
+      document.write("<br>");
+      document.write(anime);
+      document.write("<br>");
+      document.write("<br>");
+      anime.pop();
+      document.write("Array after removing aot");
+      document.write("<br>");
+      document.write("<br>");
+      document.write(anime);
+      document.write("<br>");
+      document.write("<br>");
+      document.write(
+        "Searching for aot which returns -1 as it has been deleted"
+      );
+      document.write("<br>");
+      document.write("<br>");
+      document.write(anime.indexOf("aot"));
+      document.write("<br>");
+      document.write("<br>");
+      document.write(anime);
+    </script>
+    <style>
+      body {
+        background-color: black;
+        color: rgb(252, 255, 57);
+      }
+    </style>
+  </head>
+  <body></body>
+</html>

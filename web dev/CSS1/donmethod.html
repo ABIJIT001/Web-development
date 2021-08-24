@@ -1,0 +1,17 @@
+<html>
+<head><title>Dom methods</title>
+</head>
+<body>
+<div id="d1">
+<p id="p1">first paragraph</p>
+</div>
+<script>
+var division=document.getElementById("d1");
+var para=document.getElementById("p1");
+var newheading=document.createElement("h1");
+var headingtext=document.createTextNode(" Welcome to HTML Dom ");
+newheading.appendChild(headingtext);
+division.insertBefore(newheading,para);
+</script>
+</body>
+</html>

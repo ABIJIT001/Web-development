@@ -1,0 +1,11 @@
+header a {
+    color: teal;
+    font-size: 30px;
+
+}
+#dislikes a {
+    color: red;
+    background-color: transparent;
+    text-decoration: none;
+    font-weight: bold;
+}
